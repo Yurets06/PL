@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/PL/static/css/main.5a83d6d3.css",
+    "main.js": "/PL/static/js/main.3d7cded9.js",
+    "static/media/image-fixed.jpg": "/PL/static/media/image-fixed.737a3e6abdac8b6213e5.jpg",
+    "static/media/image-5.webp": "/PL/static/media/image-5.1328b8386267a4bcf34d.webp",
+    "static/media/image-18.webp": "/PL/static/media/image-18.6bba3f475036080bd171.webp",
+    "static/media/image-15.webp": "/PL/static/media/image-15.a8b51fa8bcf9dfa67fa9.webp",
+    "static/media/image-20.webp": "/PL/static/media/image-20.5b23a3bb002e9a76c224.webp",
+    "static/media/image-14.webp": "/PL/static/media/image-14.bd9cd7ac224952e37b17.webp",
+    "static/media/image-1.webp": "/PL/static/media/image-1.b88f156c606db31c6807.webp",
+    "static/media/image-6.webp": "/PL/static/media/image-6.4e4928e284f9fe9f9b43.webp",
+    "static/media/image-3.webp": "/PL/static/media/image-3.29b568cf26e7fab10b72.webp",
+    "static/media/image-7.webp": "/PL/static/media/image-7.80caf1d46e096d5ab2c7.webp",
+    "static/media/image-2.webp": "/PL/static/media/image-2.9aee1475344370979556.webp",
+    "static/media/image-17.webp": "/PL/static/media/image-17.4d3e25297919285de11a.webp",
+    "static/media/image-19.webp": "/PL/static/media/image-19.4a53641c4fc45a026c12.webp",
+    "static/media/image-4.webp": "/PL/static/media/image-4.ecc9e255444aae357b1e.webp",
+    "static/media/image-8.webp": "/PL/static/media/image-8.9a3f3aa19c9479cdbeff.webp",
+    "static/media/image-21.webp": "/PL/static/media/image-21.0dc19b2565c67ef86874.webp",
+    "static/media/tm-logo.webp": "/PL/static/media/tm-logo.2f65ff510e1eda9091a5.webp",
+    "static/media/image-9.webp": "/PL/static/media/image-9.a649bbe44c00016fea39.webp",
+    "static/media/sm-logo.webp": "/PL/static/media/sm-logo.80229d894fb6da07ebae.webp",
+    "static/media/hg-logo.webp": "/PL/static/media/hg-logo.f1476defc98456f73712.webp",
+    "static/media/st-logo.webp": "/PL/static/media/st-logo.41cd685977dc1e5be8de.webp",
+    "static/media/dc-logo.webp": "/PL/static/media/dc-logo.00ce087a9c07374fca27.webp",
+    "static/media/pl-logo.webp": "/PL/static/media/pl-logo.38d882f2783ff9e6e448.webp",
+    "static/media/mh-logo.webp": "/PL/static/media/mh-logo.f7d47c4bf01d900700b6.webp",
+    "static/media/image-11.webp": "/PL/static/media/image-11.b3fa5194aa200ce7d500.webp",
+    "static/media/gr-logo.webp": "/PL/static/media/gr-logo.09ab278daa888fe1655f.webp",
+    "index.html": "/PL/index.html",
+    "main.5a83d6d3.css.map": "/PL/static/css/main.5a83d6d3.css.map",
+    "main.3d7cded9.js.map": "/PL/static/js/main.3d7cded9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a83d6d3.css",
+    "static/js/main.3d7cded9.js"
+  ]
+}
