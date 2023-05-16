@@ -11,7 +11,7 @@ const Footer = () => {
                   <div className="footer-item">
                      <div className="footer-item-block">
                         <a href="/"><img src={logo} alt="logo" /></a>
-                        <h2 className='footer-item-block-title'>ГО <span>"ПЛЯЖНИЙ ЛЬВІВ"</span></h2>
+                        <h2 className='footer-item-block-title'>ГО <span>"ПЛЯЖНИЙ LVIV"</span></h2>
                      </div>
                   </div>
                   <div className="footer-item">

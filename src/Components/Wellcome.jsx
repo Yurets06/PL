@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { Container } from 'react-bootstrap';
+import { motion } from 'framer-motion';
+
+
 
 const Wellcome = () => {
    const [formData, setFormData] = useState({
@@ -29,39 +32,64 @@ const Wellcome = () => {
       setFormData({ name: '', email: '', message: '' });
    };
 
+
+   const textAnimation = {
+      hidden: {
+         x: -100,
+         opacity: 0,
+      },
+      visible: custom => ({
+         x: 0,
+         opacity: 1,
+         transition: { delay: custom * 0.2 },
+      }),
+   }
+
+   const formAnimation = {
+      hiddens: {
+         y: 50,
+         opacity: 0,
+      },
+      visibles: custom => ({
+         y: 0,
+         opacity: 1,
+         transition: { delay: custom * 0.2 },
+      }),
+   }
+
    return (
       <div className='wellcome'>
          <Container>
             <div className="wellcome-item">
-               <div className="wellcome-item-title">
-                  <h2>Пляжний <span className='linear'>Lviv</span> вітає Вас на <span className='linear'>нашому </span> сайті</h2>
-                  <p className='wellcome-subtitle'>Тут ви зможете слідкувати за нашою діяльністю: тренуваннями, турнірами, досягненнями та іншими подіями.</p>
+               <motion.div initial='hidden' whileInView='visible' className="wellcome-item-title">
+                  <motion.h2 custom={1} variants={textAnimation} >Пляжний <span className='linear'>Lviv</span> вітає Вас на <span className='linear'>нашому </span> сайті</motion.h2>
+                  <motion.p custom={2} variants={textAnimation} className='wellcome-subtitle'>Тут ви зможете слідкувати за нашою діяльністю: тренуваннями, турнірами, досягненнями та іншими подіями.</motion.p>
                   <div className="title-blur"></div>
-               </div>
-               <div className='form'>
-                  <h3 className='form-title'>Зворотний зв'язок</h3>
-                  <form className='form-item' onSubmit={handleSubmit}>
-                     <label className='form-item-block'>
+               </motion.div>
+               <motion.div initial='hiddens' whileInView='visibles' className='form'>
+                  <motion.h3 custom={1} variants={formAnimation} className='form-title'>Зворотний зв'язок</motion.h3>
+                  <motion.form className='form-item' onSubmit={handleSubmit}>
+                     <motion.label custom={1} variants={formAnimation} className='form-item-block'>
                         <input type="text" name="name" required='required' value={formData.name} onChange={handleChange} />
                         <span>Enter Name</span>
-                     </label>
-                     <label className='form-item-block'>
+                     </motion.label>
+                     <motion.label custom={1} variants={formAnimation} className='form-item-block'>
                         <input type="email" name="email" required='required' value={formData.email} onChange={handleChange} />
                         <span>Enter Email</span>
-                     </label>
-                     <label className='form-item-block'>
+                     </motion.label>
+                     <motion.label custom={1} variants={formAnimation} className='form-item-block'>
                         <textarea name="message" required='required' value={formData.message} onChange={handleChange} />
                         <span>Enter Message</span>
-                     </label>
-                     <button className='form-item-btn' type="submit">Надіслати</button>
+                     </motion.label>
+                     <motion.button custom={1} variants={formAnimation} className='form-item-btn' type="submit">Надіслати</motion.button>
                      <div className="shadow"></div>
-                  </form>
-               </div>
+                  </motion.form>
+               </motion.div>
             </div>
             <div className="blur"></div>
             <div className="logo-blur"></div>
-         </Container>
-      </div>
+         </Container >
+      </div >
    )
 };
 

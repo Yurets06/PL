@@ -16,7 +16,7 @@ const galItemData = [
    {
       id: 3, title: 'Чемпіонат області серед дівчат!', data: 'ЖОВТЕНЬ 4, 2022', imgSr: imageItem3, link: '/pageThree'
    },
-   
+
 ]
 
 
@@ -38,7 +38,7 @@ const GalleryItem = () => {
             <div className="cardss">
                {slice.map((item, index) => {
                   return (
-                     <Tilt className='hr'>
+                     <div className='hr'>
                         <div className="cardes" key={item.id}>
                            <div className="poster">
                               <img src={item.imgSr} alt="image" />
@@ -48,11 +48,11 @@ const GalleryItem = () => {
                               <p className='details-data'>{item.data}</p>
                            </div>
                         </div>
-                     </Tilt>
+                     </div>
                   )
                })}
-               <button className='btn-more' onClick={() => loadMore()}>Більше</button>
             </div>
+            <button className='btn-more' onClick={() => loadMore()}>Більше</button>
          </Container>
       </div>
    )

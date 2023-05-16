@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 import img1 from '../assets/pl-logo.webp';
 import img2 from '../assets/sm-logo.webp';
 import img3 from '../assets/dc-logo.webp';
@@ -37,25 +38,35 @@ const partData = [
 
 ]
 
+const partAnimation = {
+   hidden: {
+      opacity: 0,
+   },
+   visible: custom => ({
+      opacity: 1,
+      transition: { delay: custom * 0.1 },
+   }),
+}
+
 const Partners = () => {
    return (
-      <div>
-         <div className="part">
+      <motion.div initial='hidden' whileInView='visible' viewport={{ amount: 0.1 }} >
+         <motion.div custom={1} variants={partAnimation} className="part">
             <Container>
                <div className="partners">
-                  <div className="partners-item">
+                  <motion.div className="partners-item">
                      {partData.map((item, index) => {
                         return (
-                           <img key={item} className='partners-item-image' src={item.srcImg} alt={item.alt}/>
+                           <motion.img custom={index + 1} variants={partAnimation} key={item} className='partners-item-image' src={item.srcImg} alt={item.alt} />
                         )
                      })}
-                  </div>
+                  </motion.div>
                </div>
             </Container>
             <div className="blurr"></div>
             <div className="blurs"></div>
-         </div>
-      </div>
+         </motion.div>
+      </motion.div>
    )
 }
 

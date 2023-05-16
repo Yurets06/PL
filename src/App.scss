@@ -47,7 +47,13 @@ body{
    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
    backdrop-filter: blur(80px);
 }
+@media (max-width: 767px) {
 
+   .navibar-item::before{
+      display: none;
+   }
+   
+}
 
 // wellcome
 
@@ -1014,7 +1020,7 @@ body{
 }
 
 .btn-more{
-   background-color: rgba(255, 255, 255, 0.3);
+   background-color: transparent;
    color: #fff;
    padding: 10px 30px;
    border: 1px solid #fff;
